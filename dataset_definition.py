@@ -66,11 +66,11 @@ has_ace_treatment = (
     .exists_for_patient()
 )
 
-dataset = create_dataset()
-dataset.define_population(on_register)
+dataset1 = create_dataset()
+dataset1.define_population(on_register)
 
-dataset.prt_or_mal = has_proteinuria_diagnosis | has_microalbuminuria_diagnosis
-dataset.ace_or_arb = has_arb_treatment | has_ace_treatment
+dataset1.prt_or_mal = has_proteinuria_diagnosis | has_microalbuminuria_diagnosis
+dataset1.ace_or_arb = has_arb_treatment | has_ace_treatment
 
 
-show(dataset)
+show(dataset1)
